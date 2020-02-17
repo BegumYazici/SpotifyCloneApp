@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:id="@+id/buttonFirst"
+        android:text="First"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonSixth"
+        android:layout_alignRight="@+id/buttonFirst"
+        android:text="Sixth"
+        android:layout_below="@+id/buttonFirst"
+        />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:id="@+id/buttonSecond"
+        android:text="Second"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/buttonSeventh"
+        android:text="Seventh"
+        android:layout_below="@+id/buttonSecond"
+        android:layout_alignLeft="@+id/buttonSecond"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/buttonThird"
+        android:layout_centerInParent="true"
+        android:text="Third"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:id="@+id/buttonFourth"
+        android:text="Fourth"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/buttonFifth"
+        android:text="Fifth"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

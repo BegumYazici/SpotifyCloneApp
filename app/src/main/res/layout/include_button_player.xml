@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sizeBottomPlayer"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBottomPlayer">
+
+    <ImageView
+        android:layout_width="@dimen/sizeBottomPlayerIcon"
+        android:layout_height="@dimen/sizeBottomPlayerIcon"
+        android:id="@+id/imageViewRadioIcon"
+        android:padding="@dimen/padding_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radioPlayerInfo"
+        android:layout_toRightOf="@+id/imageViewRadioIcon"
+        android:layout_toLeftOf="@+id/linearLayoutFavoritePlay"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewRadioTitle"
+            android:text="Player Name"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewRadioStatus"
+            android:text="Playing"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutFavoritePlay"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewFavorite"
+            app:srcCompat="@drawable/ic_favorite_24px"
+            android:tint="@color/colorRed"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewPauseControl"
+            app:srcCompat="@drawable/ic_pause_24px"
+            android:tint="@color/colorWhite"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </LinearLayout>
+</RelativeLayout>

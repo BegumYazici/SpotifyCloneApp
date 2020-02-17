@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SpotifyCloneApp1</string>
+
+    <string-array name="tabs">
+        <item>Radio</item>
+        <item>Favorites</item>
+    </string-array>
+</resources>
